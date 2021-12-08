@@ -1,3 +1,6 @@
+# API to create tiny/short url 
+
+
 ## Tech stack
 
 - [Scala](https://www.scala-lang.org/)
@@ -24,6 +27,11 @@ Algorithm taken from  - https://medium.com/@sandeep4.verma/system-design-scalabl
 - Each successful conversion of url to short url stores short url in database
 - Before conversion of a url, database is checked for existing short url. If present then return from DB.
 - Current persistence service is an inmemory implementation, which can be easily changed to a db like Redis or Cassandra.
+
+## Further Improvements
+
+- Move inmemory persistence to redis/cassandra
+- Perform validation on incoming data , ex- valid url
 
 ## Commands
 
